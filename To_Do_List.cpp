@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// Task information
 struct Task {
     string description;
     bool completed;
@@ -36,7 +35,6 @@ int main() {
         cin.ignore(); 
 
         if (choice == 1) {
-            // Add Task
             string taskDesc;
             cout << "Enter task description: ";
             getline(cin, taskDesc);
@@ -44,7 +42,6 @@ int main() {
             cout << "Task added successfully." << endl;
 
         } else if (choice == 2) {
-            // View Tasks
             if (todoList.empty()) {
                 cout << "No tasks in the list." << endl;
             } else {
@@ -57,7 +54,6 @@ int main() {
             }
 
         } else if (choice == 3) {
-            // Mark Task as Completed
             int index;
             cout << "Enter task number to mark as completed: ";
             cin >> index;
@@ -70,7 +66,6 @@ int main() {
             }
 
         } else if (choice == 4) {
-            // Remove Task
             int index;
             cout << "Enter task number to remove: ";
             cin >> index;
@@ -83,7 +78,6 @@ int main() {
             }
 
         } else if (choice == 5) {
-            // Exit
             cout << "Exiting To-Do List Manager. Goodbye!" << endl;
             break;
 
