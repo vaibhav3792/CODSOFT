@@ -8,20 +8,20 @@ int main() {
     cout << "Basic Calculator Program" << endl;
     cout << "------------------------" << endl;
 
-    // Input two numbers
+
     cout << "Enter first number: ";
     cin >> num1;
 
     cout << "Enter second number: ";
     cin >> num2;
 
-    // Choose operation
+    
     cout << "Choose operation (+, -, *, /): ";
     cin >> op;
 
     double result;
 
-    // Perform calculation based on operator
+   
     switch (op) {
         case '+':
             result = num1 + num2;
